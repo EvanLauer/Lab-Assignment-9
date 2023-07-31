@@ -147,7 +147,7 @@ int main(void)
     printRecords(pRecords, recordSz);
 
     // Your hash implementation
-    int hashSize = 15; // Set your desired hash table size
+    int hashSize = 15;
     struct HashType hashTable;
     hashTable.size = hashSize;
     hashTable.array = (struct Node **)malloc(hashSize * sizeof(struct Node *));
