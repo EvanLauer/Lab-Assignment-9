@@ -157,22 +157,18 @@ int main(void)
         return -1;
     }
 
-    // Initialize the hash table with NULL values
     for (int i = 0; i < hashSize; i++)
     {
         hashTable.array[i] = NULL;
     }
 
-    // Insert records into the hash table
     for (int i = 0; i < recordSz; i++)
     {
         insert(&hashTable, pRecords[i]);
     }
 
-    // Display records in the hash table
     displayRecordsInHash(&hashTable);
 
-    // Free allocated memory for the hash table
     for (int i = 0; i < hashSize; i++)
     {
         struct Node *current = hashTable.array[i];
